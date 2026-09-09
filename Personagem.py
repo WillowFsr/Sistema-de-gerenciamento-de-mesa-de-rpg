@@ -4,7 +4,7 @@ from Atacante import Atacante
 class Personagem( Atacante):
   contador = 0
   
-  def __init__(self, nome:str, nivel: int, vida: int,mentor:"Personagem" |  None= None):
+  def __init__(self, nome:str, nivel: int, vida: int,mentor = None):
     Personagem.contador += 1
     self.__id = Personagem.contador
     self.__nome = nome
@@ -17,7 +17,7 @@ class Personagem( Atacante):
     if(self.__vida >0):
       self.__vida = max(0,self.__vida - dano_recebido)
       if(self.__vida >0):
-        print(f"Voce recebeu {dano_recebido} e possui atualmente {self.__vida} de vida")
+        print(f"Voce recebeu {dano_recebido} de dano e possui atualmente {self.__vida} de vida")
       else:
         print(f"O dano foi fatal")
 

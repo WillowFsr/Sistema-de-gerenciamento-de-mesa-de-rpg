@@ -1,7 +1,7 @@
 from Personagem import Personagem
 
 class Mago(Personagem):
-  def __init__(self,inteligencia: int, nome:str, nivel: int, vida: int,mentor:"Personagem" |  None= None):
+  def __init__(self,inteligencia: int, nome:str, nivel: int, vida: int,mentor= None):
     self.__inteligencia = inteligencia
     super().__init__(nome, nivel, vida, mentor) 
 

@@ -14,9 +14,7 @@ def main():
     pocao = Item("Poção de Cura", "Consumível")
 
     guerreiro = Guerreiro(forca=18, nome="Thorin", nivel=10, vida=100)
-    mago = Mago(
-        inteligencia=20, nome="Gandalf", nivel=2, vida=40, mentor=guerreiro
-    )
+    mago = Mago(inteligencia=20, nome="Gandalf", nivel=2, vida=40, mentor=guerreiro)
     arqueiro = Arqueiro(precisao=95.5, nome="Legolas", nivel=5, vida=60)
 
     guerreiro.atacar()

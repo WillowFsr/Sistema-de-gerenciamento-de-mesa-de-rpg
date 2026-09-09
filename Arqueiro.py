@@ -1,7 +1,7 @@
 from Personagem import Personagem
 
 class Arqueiro( Personagem):
-  def __init__(self,precisao: float, nome:str, nivel: int, vida: int,mentor:"Personagem" |  None= None):
+  def __init__(self,precisao: float, nome:str, nivel: int, vida: int, mentor = None):
     self.__precisao = precisao
     super().__init__(nome, nivel, vida, mentor)
 

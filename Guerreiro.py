@@ -1,7 +1,7 @@
 from Personagem import Personagem
 
 class Guerreiro( Personagem):
-  def __init__(self, forca: int, nome:str, nivel: int, vida: int,mentor:"Personagem" |  None= None):
+  def __init__(self, forca: int, nome:str, nivel: int, vida: int, mentor = None):
     self.__forca = forca
     super().__init__(nome, nivel, vida, mentor)
 
