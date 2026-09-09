@@ -3,7 +3,6 @@ from Jogador import Jogador
 from Participacao import Participacao
 from Sessao import Sessao
 
-
 class Mesa:
     contador: int = 0
 

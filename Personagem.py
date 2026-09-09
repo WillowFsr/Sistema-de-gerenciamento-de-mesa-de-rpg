@@ -47,7 +47,7 @@ class Personagem( Atacante):
   def get_Mentor(self):
     return self.__Mentor
 
-  def definir_mentor(self, mentor:Personagem):
+  def definir_mentor(self, mentor:"Personagem"):
     if(mentor == self):
       print(f"Um personagem não pode ser mentor dele mesmo")
     else:

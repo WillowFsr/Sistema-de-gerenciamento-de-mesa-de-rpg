@@ -1,6 +1,9 @@
 from Personagem import Personagem
+
 class Jogador:
+  
   contador: int = 0
+  
   def __init__(self, nome):
     Jogador.contador +=1
     self.__id = Jogador.contador
